@@ -33,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
     // Tracks the score for Team B
     int scoreTeamB = 0;
 
+    int yellowCardTeamA = 0;
+    int redCardTeamA = 0;
+
+    int yellowCardTeamB = 0;
+    int redCardTeamB = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,15 +95,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team B by 1 point.
-     */
-    public void addOneForTeamB(View v) {
-        scoreTeamB = scoreTeamB + 1;
-        displayForTeamB(scoreTeamB);
-    }
-
-    /**
-     * Increase the score for Team B by 2 points.
+     * Increase the score for Team B by 2 point.
      */
     public void addTwoForTeamB(View v) {
         scoreTeamB = scoreTeamB + 2;
@@ -113,13 +111,29 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Increase the score for Team B by 5 points.
+     */
+    public void addFiveForTeamB(View v) {
+        scoreTeamB = scoreTeamB + 5;
+        displayForTeamB(scoreTeamB);
+    }
+
+    /**
      * Resets the score for both teams back to 0.
      */
     public void resetScore(View v) {
         scoreTeamA = 0;
         scoreTeamB = 0;
+        yellowCardTeamA = 0;
+        redCardTeamA = 0;
+        yellowCardTeamB = 0;
+        redCardTeamB = 0;
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
+        displayYellowCardForTeamA(yellowCardTeamA);
+        displayRedCardForTeamA(redCardTeamA);
+        displayYellowCardForTeamB(yellowCardTeamB);
+        displayRedCardForTeamB(redCardTeamB);
     }
 
     /**
@@ -137,4 +151,49 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
+
+
+    public void addYellowCardForTeamA(View v) {
+    yellowCardTeamA = yellowCardTeamA + 1;
+        displayYellowCardForTeamA(yellowCardTeamA);
+}
+
+    public void displayYellowCardForTeamA(int numberOfCard) {
+        TextView scoreView = (TextView) findViewById(R.id.team_a_yellow_card);
+        scoreView.setText(String.valueOf(numberOfCard));
+    }
+
+    public void addRedCardForTeamA(View v) {
+        redCardTeamA = redCardTeamA + 1;
+        displayRedCardForTeamA(redCardTeamA);
+    }
+
+    public void displayRedCardForTeamA(int numberOfCard) {
+        TextView scoreView = (TextView) findViewById(R.id.team_a_red_card);
+        scoreView.setText(String.valueOf(numberOfCard));
+    }
+
+
+
+    public void addYellowCardForTeamB(View v) {
+        yellowCardTeamB = yellowCardTeamB + 1;
+        displayYellowCardForTeamB(yellowCardTeamB);
+    }
+
+    public void displayYellowCardForTeamB(int numberOfCard) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_yellow_card);
+        scoreView.setText(String.valueOf(numberOfCard));
+    }
+
+    public void addRedCardForTeamB(View v) {
+        redCardTeamB = redCardTeamB + 1;
+        displayRedCardForTeamB(redCardTeamB);
+    }
+
+    public void displayRedCardForTeamB(int numberOfCard) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_red_card);
+        scoreView.setText(String.valueOf(numberOfCard));
+    }
+
+
 }
