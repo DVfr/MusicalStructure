@@ -23,7 +23,8 @@
         <activity
             android:name=".ArtistListActivity"
             android:label="Artist List" />
-        <activity android:name=".TitleListActivity" />
+        <activity android:name=".TitleListActivity"
+            android:label="Title List"/>
         <activity android:name=".PlayActivity"></activity>
     </application>
 

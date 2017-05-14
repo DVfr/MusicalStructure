@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,33 +10,29 @@
         style="@style/mainActivityStyle">
     <TextView
         android:id="@+id/artistListTextview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/mainActivityCategory"
         android:text="Artist"/>
 
     <TextView
-        android:id="@+id/albumList"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/albumListTextview"
+        style="@style/mainActivityCategory"
         android:text="Album"/>
 
     <TextView
-        android:id="@+id/titleList"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/titleListTextView"
+        style="@style/mainActivityCategory"
         android:text="Title"/>
 
     <TextView
-        android:id="@+id/random"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/randomTextView"
+        style="@style/mainActivityCategory"
         android:text="Get Lucky"/>
 
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/mainTextview"
+        style="@style/textViewStyle"
         android:text="Hello World!"
         />
 </LinearLayout>

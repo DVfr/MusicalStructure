@@ -15,4 +15,17 @@
         <item name="android:orientation">vertical</item>
     </style>
 
+    <style name="mainActivityCategory">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/categoryTextSize</item>
+        <item name="android:layout_marginBottom">@dimen/categoryMargin</item>
+
+    </style>
+    <style name="textViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
 </resources>

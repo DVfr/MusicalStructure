@@ -26,5 +26,32 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+
+        // Find the View that shows the AlbumList category
+        TextView albumList = (TextView) findViewById(R.id.albumListTextview);
+
+        albumList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent playIntent = new Intent(MainActivity.this, AlbumListActivity.class);
+                startActivity(playIntent);
+
+            }
+
+        });
+
+        // Find the View that shows the TitleList category
+        TextView titleList = (TextView) findViewById(R.id.titleListTextView);
+
+        titleList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent playIntent = new Intent(MainActivity.this, TitleListActivity.class);
+                startActivity(playIntent);
+
+            }
+
+        });
     }
 }
