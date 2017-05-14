@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--Style for main Activity-->
     <style name="mainActivityStyle">
         <item name="android:padding">@dimen/main_activity_padding</item>
         <item name="android:layout_width">match_parent</item>
@@ -22,10 +23,33 @@
         <item name="android:layout_marginBottom">@dimen/categoryMargin</item>
 
     </style>
+
     <style name="textViewStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">bottom</item>
     </style>
 
+    <!--Style for Artist List Activity-->
+    <style name="artistListStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:padding">@dimen/artistListPadding</item>
+        <item name="android:layout_marginLeft">@dimen/artistListMarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/artistListMarginRight</item>
+    </style>
+
+    <style name="artistListImageView">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="artistListTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
 </resources>

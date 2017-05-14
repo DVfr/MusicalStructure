@@ -4,62 +4,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_marginTop="24dp"
     tools:context="com.example.android.musicalstructureapp.ArtistListActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:padding="8dp"
-        android:layout_marginLeft="24dp">
+        style="@style/artistListStyle">
 
         <ImageView
-            android:layout_width="56dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="16dp"
+            style="@style/artistListImageView"
             android:src="@drawable/air"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="16sp"
-            android:gravity="center_vertical"
+            style="@style/artistListTextView"
             android:text="Air" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:padding="4dp">
+       <LinearLayout
+        style="@style/artistListStyle">
 
         <ImageView
-            android:layout_width="56dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="16dp"
+            style="@style/artistListImageView"
+            android:src="@drawable/genesis"/>
+        <TextView
+            style="@style/artistListTextView"
+            android:text="Genesis" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/artistListStyle">
+
+        <ImageView
+            style="@style/artistListImageView"
             android:src="@drawable/jarre"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="16sp"
-            android:gravity="center_vertical"
+            style="@style/artistListTextView"
             android:text="Jean-Michel Jarre" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:padding="8dp">
+        style="@style/artistListStyle">
 
         <ImageView
-            android:layout_width="48dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/genesis"/>
+            style="@style/artistListImageView"
+            android:src="@drawable/philcollins"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="16sp"
-            android:gravity="center_vertical"
-            android:text="Genesis" />
+            style="@style/artistListTextView"
+            android:text="Phil Collins" />
     </LinearLayout>
+
+    <LinearLayout
+        style="@style/artistListStyle">
+
+        <ImageView
+            style="@style/artistListImageView"
+            android:src="@drawable/zappa"/>
+        <TextView
+            style="@style/artistListTextView"
+            android:text="Frank Zappa" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/mainTextview"
         style="@style/textViewStyle"
