@@ -41,7 +41,8 @@
     </LinearLayout>
 
     <LinearLayout
-        style="@style/artistListStyle">
+        android:id="@+id/PhilCollinsLayout"
+         style="@style/artistListStyle">
 
         <ImageView
             style="@style/artistListImageView"
@@ -63,8 +64,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/mainTextview"
         style="@style/textViewStyle"
-        android:text="Hello World!"
+        android:text="@string/artistListString"
         />
 </LinearLayout>

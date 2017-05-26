@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-// Find the View that shows the ArtistList category
+    // Find the View that shows the ArtistList category
         TextView artistList = (TextView) findViewById(R.id.artistListTextview);
 
         artistList.setOnClickListener(new View.OnClickListener() {

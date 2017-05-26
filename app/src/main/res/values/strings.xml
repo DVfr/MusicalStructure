@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MusicalStructureApp</string>
+    <string name="artistListString">This activity shows the list of artists on our discogs.com discography.</string>
 </resources>
