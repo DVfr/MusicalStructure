@@ -1,8 +1,224 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.android.musicalstructureapp.AlbumListActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/apostrophe" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Apostrophe - Frank Zappa" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/trick" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="A Trick Of The Tail - Genesis" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/bothsides" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Both Sides - Phil Collins" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle"
+                android:id="@+id/butSeriously">
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/butseriously" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="...but Seriously - Phil Collins" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/PhilCollinsLayout"
+                style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/dance" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Dance Into The Light - Phil Collins" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/equinoxe" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Equinoxe - Jean-Michel Jarre" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/facevalue" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Face Value - Phil Collins" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/genesis" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Genesis - Genesis" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/goingback" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Going Back - Phil Collins" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/hello" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Hello, I Must Be Going ! - Phil Collins" />
+            </LinearLayout>
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/invisibletouch" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Invisible Touch - Genesis" />
+            </LinearLayout>
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/jazzfromhell" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Jazz From Hell - Frank Zappa" />
+            </LinearLayout>
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/moonsafari" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Moon Safari - Air" />
+            </LinearLayout>
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/nojacket" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="No Jacket Required - Phil Collins" />
+            </LinearLayout>
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/oxygene" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Oxygene - Jean-Michel Jarre" />
+            </LinearLayout>
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/rendezvous" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Rendez-Vous - Jean-Michel Jarre" />
+            </LinearLayout>
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/testify" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Testify - Phil Collins" />
+            </LinearLayout>
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/wecantdance" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="We Can't Dance - Genesis" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+
+        android:gravity="center"
+        android:text="This activity list the albums from the discogs collection in alphabetical order"
+        android:textSize="24sp" />
+
+</LinearLayout>

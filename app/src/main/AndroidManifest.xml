@@ -16,16 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ArtistActivity" />
+        <activity
+            android:name=".ArtistActivity"
+            android:label="PHIL COLLINS" />
         <activity
             android:name=".AlbumListActivity"
             android:label="Album List" />
         <activity
             android:name=".ArtistListActivity"
             android:label="Artist List" />
-        <activity android:name=".TitleListActivity"
-            android:label="Title List"/>
-        <activity android:name=".PlayActivity"></activity>
+        <activity
+            android:name=".TitleListActivity"
+            android:label="Title List" />
+        <activity
+            android:name=".PlayActivity"
+            android:label="...but Seriously" />
+
     </application>
 
 </manifest>

@@ -19,11 +19,6 @@
         android:text="Album"/>
 
     <TextView
-        android:id="@+id/titleListTextView"
-        style="@style/mainActivityCategory"
-        android:text="Title"/>
-
-    <TextView
         android:id="@+id/randomTextView"
         style="@style/mainActivityCategory"
         android:text="Get Lucky"/>

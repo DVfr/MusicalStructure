@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">MusicalStructureApp</string>
-    <string name="artistListString">This activity shows the list of artists on our discogs.com discography.</string>
+    <string name="artistListString">This activity shows the list of artists, taken from my discogs.com discography.\n</string>
+    <string name="albumListString">This \n is \n a test !</string>
+    <string name="artistString">In this activity the user can chose an album from the selected artist.
+        This list comes from the discogs.com API. As an example the only active album is BUT SERIOUSLY !</string>
+    <string name="playString">In this activity the album selected is displayed, all its songs are listed and can be played
+        thanks to the media player.\n
+            The album detail is retrieved from the discog.com api</string>
 </resources>

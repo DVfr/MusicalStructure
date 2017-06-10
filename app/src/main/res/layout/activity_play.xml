@@ -1,8 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.android.musicalstructureapp.PlayActivity">
+    <TextView
+        style="@style/artistTextView"
+        android:text="@string/artistString"/>
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="24dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/facevalue" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Face Value" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/hello" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Hello, I Must Be Going" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/nojacket" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="No Jacket Required" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/PhilCollinsLayout"
+                style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/butseriously" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="...But Seriously" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/bothsides" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Both Sides" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/dance" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Dance Into The Light" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/testify" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Testify" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/goingback" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Going Back" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        style="@style/artistTextView"
+        android:text="@string/playString"/>
+
+</LinearLayout>
