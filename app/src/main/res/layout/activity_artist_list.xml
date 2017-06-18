@@ -4,67 +4,114 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="24dp"
     tools:context="com.example.android.musicalstructureapp.ArtistListActivity">
 
     <LinearLayout
-        style="@style/artistListStyle">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/lightGrey">
 
         <ImageView
-            style="@style/artistListImageView"
-            android:src="@drawable/air"/>
-        <TextView
-            style="@style/artistListTextView"
-            android:text="Air" />
-    </LinearLayout>
-
-       <LinearLayout
-        style="@style/artistListStyle">
+            android:id="@+id/homeIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home_black_24dp" />
 
         <ImageView
-            style="@style/artistListImageView"
-            android:src="@drawable/genesis"/>
-        <TextView
-            style="@style/artistListTextView"
-            android:text="Genesis" />
-    </LinearLayout>
-
-    <LinearLayout
-        style="@style/artistListStyle">
+            android:id="@+id/artistIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_account_box_black_24dp" />
 
         <ImageView
-            style="@style/artistListImageView"
-            android:src="@drawable/jarre"/>
-        <TextView
-            style="@style/artistListTextView"
-            android:text="Jean-Michel Jarre" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/PhilCollinsLayout"
-         style="@style/artistListStyle">
+            android:id="@+id/albumIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_library_music_black_24dp" />
 
         <ImageView
-            style="@style/artistListImageView"
-            android:src="@drawable/philcollins"/>
-        <TextView
-            style="@style/artistListTextView"
-            android:text="Phil Collins" />
+            android:id="@+id/noteIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_music_note_black_24dp" />
+
     </LinearLayout>
 
-    <LinearLayout
-        style="@style/artistListStyle">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <ImageView
-            style="@style/artistListImageView"
-            android:src="@drawable/zappa"/>
-        <TextView
-            style="@style/artistListTextView"
-            android:text="Frank Zappa" />
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/air" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Air" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/genesis" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Genesis" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/jarre" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Jean-Michel Jarre" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/PhilCollinsLayout"
+                style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/philcollins" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Phil Collins" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/artistListStyle">
+
+                <ImageView
+                    style="@style/artistListImageView"
+                    android:src="@drawable/zappa" />
+
+                <TextView
+                    style="@style/artistListTextView"
+                    android:text="Frank Zappa" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <TextView
-        style="@style/textViewStyle"
-        android:text="@string/artistListString"
-        />
+        style="@style/activityLabel"
+        android:text="@string/artistListString" />
 </LinearLayout>

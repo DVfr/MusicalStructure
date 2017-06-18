@@ -6,6 +6,42 @@
     android:orientation="vertical"
     tools:context="com.example.android.musicalstructureapp.ArtistActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/lightGrey">
+
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home_black_24dp" />
+
+        <ImageView
+            android:id="@+id/artistIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_account_box_black_24dp" />
+
+        <ImageView
+            android:id="@+id/albumIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_library_music_black_24dp" />
+
+        <ImageView
+            android:id="@+id/noteIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_music_note_black_24dp" />
+
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -111,7 +147,7 @@
     </ScrollView>
 
     <TextView
-        style="@style/artistTextView"
+        style="@style/activityLabel"
         android:text="@string/artistString"/>
 
 </LinearLayout>

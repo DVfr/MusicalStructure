@@ -1,10 +1,24 @@
 <resources>
     <string name="app_name">MusicalStructureApp</string>
-    <string name="artistListString">This activity shows the list of artists, taken from my discogs.com discography.\n</string>
-    <string name="albumListString">This \n is \n a test !</string>
+    <string name="artistListString">This activity shows the list of artists, retrieved from the discogs.com API.</string>
+    <string name="albumListString">This activity shows the complete album collection, retrieved from the discogs.com API</string>
     <string name="artistString">In this activity the user can chose an album from the selected artist.
         This list comes from the discogs.com API. As an example the only active album is BUT SERIOUSLY !</string>
-    <string name="playString">In this activity the album selected is displayed, all its songs are listed and can be played
-        thanks to the media player.\n
-            The album detail is retrieved from the discog.com api</string>
+    <string name="playString">In this activity all songs from an album are listed and can be played
+        thanks to the media player.\nThe album detail is retrieved from the discog.com api</string>
+    <string name="butSeriously">PHIL COLLINS - &#8230;But Seriously</string>
+    <string name="title1">Hang in Long Enough\n4\'44</string>
+    <string name="title2">That\'s Just the Way It Is\n5\'20</string>
+    <string name="title3">Do You Remember?\n4\'36</string>
+    <string name="title4">Something Happened\n4\'52</string>
+    <string name="title5">Colours\n8\'51</string>
+    <string name="title6">I Wish It Would Rain Down\n5\'28</string>
+    <string name="title7">Another Day in Paradise\n5\'22</string>
+    <string name="title8">Heat on the Street\n3\'51</string>
+    <string name="title9">All of My Life\n5\'36</string>
+    <string name="title10">Saturday Night and Sunday Morning\n1\'26</string>
+    <string name="title11">Father to Son\n3\'28</string>
+    <string name="title12">Find a Way to My Heart\n6\'08</string>
+    
+
 </resources>

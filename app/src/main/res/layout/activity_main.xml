@@ -27,7 +27,7 @@
 
     <TextView
         android:id="@+id/mainTextview"
-        style="@style/textViewStyle"
+        style="@style/activityLabel"
         android:text="Hello World!"
         />
 </LinearLayout>

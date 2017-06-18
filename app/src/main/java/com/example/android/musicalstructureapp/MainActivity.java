@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         // Find the View that shows the ArtistList category
         TextView artistList = (TextView) findViewById(R.id.artistListTextview);
 
+        // Create the OnClickListener
         artistList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Find the View that shows the AlbumList category
         TextView albumList = (TextView) findViewById(R.id.albumListTextview);
-
+        // Create the OnClickListener
         albumList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,6 +41,20 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+        // Find the View that shows the Play category
+        TextView playList = (TextView) findViewById(R.id.randomTextView);
+        // Create the OnClickListener
+        playList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent playIntent = new Intent(MainActivity.this, PlayActivity.class);
+                startActivity(playIntent);
+
+            }
+
+        });
+
 
     }
 }

@@ -6,6 +6,42 @@
     android:orientation="vertical"
     tools:context="com.example.android.musicalstructureapp.AlbumListActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/lightGrey">
+
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home_black_24dp" />
+
+        <ImageView
+            android:id="@+id/artistIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_account_box_black_24dp" />
+
+        <ImageView
+            android:id="@+id/albumIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_library_music_black_24dp" />
+
+        <ImageView
+            android:id="@+id/noteIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_music_note_black_24dp" />
+
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -49,8 +85,10 @@
                     android:text="Both Sides - Phil Collins" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle"
-                android:id="@+id/butSeriously">
+            <LinearLayout
+                android:id="@+id/butSeriously"
+                style="@style/artistListStyle">
+
                 <ImageView
                     style="@style/artistListImageView"
                     android:src="@drawable/butseriously" />
@@ -127,6 +165,7 @@
                     style="@style/artistListTextView"
                     android:text="Hello, I Must Be Going ! - Phil Collins" />
             </LinearLayout>
+
             <LinearLayout style="@style/artistListStyle">
 
                 <ImageView
@@ -137,6 +176,7 @@
                     style="@style/artistListTextView"
                     android:text="Invisible Touch - Genesis" />
             </LinearLayout>
+
             <LinearLayout style="@style/artistListStyle">
 
                 <ImageView
@@ -147,6 +187,7 @@
                     style="@style/artistListTextView"
                     android:text="Jazz From Hell - Frank Zappa" />
             </LinearLayout>
+
             <LinearLayout style="@style/artistListStyle">
 
                 <ImageView
@@ -157,6 +198,7 @@
                     style="@style/artistListTextView"
                     android:text="Moon Safari - Air" />
             </LinearLayout>
+
             <LinearLayout style="@style/artistListStyle">
 
                 <ImageView
@@ -167,6 +209,7 @@
                     style="@style/artistListTextView"
                     android:text="No Jacket Required - Phil Collins" />
             </LinearLayout>
+
             <LinearLayout style="@style/artistListStyle">
 
                 <ImageView
@@ -177,6 +220,7 @@
                     style="@style/artistListTextView"
                     android:text="Oxygene - Jean-Michel Jarre" />
             </LinearLayout>
+
             <LinearLayout style="@style/artistListStyle">
 
                 <ImageView
@@ -187,6 +231,7 @@
                     style="@style/artistListTextView"
                     android:text="Rendez-Vous - Jean-Michel Jarre" />
             </LinearLayout>
+
             <LinearLayout style="@style/artistListStyle">
 
                 <ImageView
@@ -197,6 +242,7 @@
                     style="@style/artistListTextView"
                     android:text="Testify - Phil Collins" />
             </LinearLayout>
+
             <LinearLayout style="@style/artistListStyle">
 
                 <ImageView
@@ -212,13 +258,7 @@
     </ScrollView>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
-
-        android:gravity="center"
-        android:text="This activity list the albums from the discogs collection in alphabetical order"
-        android:textSize="24sp" />
+        style="@style/activityLabel"
+        android:text="@string/albumListString" />
 
 </LinearLayout>
