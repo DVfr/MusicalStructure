@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/wallpaper2"
     tools:context="com.example.android.musicalstructureapp.AlbumListActivity">
 
     <LinearLayout
@@ -52,205 +53,205 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/apostrophe" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Apostrophe - Frank Zappa" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/trick" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="A Trick Of The Tail - Genesis" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/bothsides" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Both Sides - Phil Collins" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/butSeriously"
-                style="@style/artistListStyle">
+                style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/butseriously" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="...but Seriously - Phil Collins" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/PhilCollinsLayout"
-                style="@style/artistListStyle">
+                style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/dance" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Dance Into The Light - Phil Collins" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/equinoxe" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Equinoxe - Jean-Michel Jarre" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/facevalue" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Face Value - Phil Collins" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/genesis" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Genesis - Genesis" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/goingback" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Going Back - Phil Collins" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/hello" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Hello, I Must Be Going ! - Phil Collins" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/invisibletouch" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Invisible Touch - Genesis" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/jazzfromhell" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Jazz From Hell - Frank Zappa" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/moonsafari" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Moon Safari - Air" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/nojacket" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="No Jacket Required - Phil Collins" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/oxygene" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Oxygene - Jean-Michel Jarre" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/rendezvous" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Rendez-Vous - Jean-Michel Jarre" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/testify" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Testify - Phil Collins" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/wecantdance" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="We Can't Dance - Genesis" />
             </LinearLayout>
 
@@ -259,6 +260,6 @@
 
     <TextView
         style="@style/activityLabel"
-        android:text="@string/albumListString" />
+        android:text="@string/albumListLabel" />
 
 </LinearLayout>

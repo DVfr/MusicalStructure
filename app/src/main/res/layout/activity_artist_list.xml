@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/wallpaper2"
     tools:context="com.example.android.musicalstructureapp.ArtistListActivity">
 
     <LinearLayout
@@ -52,60 +53,60 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/air" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Air" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/genesis" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Genesis" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/jarre" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Jean-Michel Jarre" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/PhilCollinsLayout"
-                style="@style/artistListStyle">
+                style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/philcollins" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Phil Collins" />
             </LinearLayout>
 
-            <LinearLayout style="@style/artistListStyle">
+            <LinearLayout style="@style/listStyle">
 
                 <ImageView
-                    style="@style/artistListImageView"
+                    style="@style/listImageView"
                     android:src="@drawable/zappa" />
 
                 <TextView
-                    style="@style/artistListTextView"
+                    style="@style/listTextView"
                     android:text="Frank Zappa" />
             </LinearLayout>
         </LinearLayout>
@@ -113,5 +114,5 @@
 
     <TextView
         style="@style/activityLabel"
-        android:text="@string/artistListString" />
+        android:text="@string/artistListLabel" />
 </LinearLayout>

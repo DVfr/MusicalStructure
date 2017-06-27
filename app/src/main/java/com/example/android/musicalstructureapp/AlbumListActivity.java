@@ -49,14 +49,11 @@ public class AlbumListActivity extends AppCompatActivity {
             }
         });
 
-
-
-
         // Find the Layout that shows the album selected (But Seriously by Phil Collins for this example)
-        LinearLayout album = (LinearLayout) findViewById(R.id.butSeriously);
+        LinearLayout selectedAlbum = (LinearLayout) findViewById(R.id.butSeriously);
 
         //Set a click Listener
-        album.setOnClickListener(new View.OnClickListener() {
+        selectedAlbum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Create a new Intent

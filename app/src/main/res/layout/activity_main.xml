@@ -3,31 +3,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wallpaper2"
     android:orientation="vertical"
     tools:context="com.example.android.musicalstructureapp.MainActivity">
 
-    <LinearLayout
-        style="@style/mainActivityStyle">
-    <TextView
-        android:id="@+id/artistListTextview"
-        style="@style/mainActivityCategory"
-        android:text="Artist"/>
+    <LinearLayout style="@style/mainActivityStyle">
 
-    <TextView
-        android:id="@+id/albumListTextview"
-        style="@style/mainActivityCategory"
-        android:text="Album"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:gravity="center_vertical">
 
-    <TextView
-        android:id="@+id/randomTextView"
-        style="@style/mainActivityCategory"
-        android:text="Get Lucky"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_black_24dp" />
 
+            <TextView
+                android:id="@+id/artistListTextview"
+                style="@style/mainActivityCategory"
+                android:text="@string/artistCategory" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_library_music_black_24dp" />
+
+            <TextView
+                android:id="@+id/albumListTextview"
+                style="@style/mainActivityCategory"
+                android:text="@string/albumCategory" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_music_note_black_24dp" />
+
+            <TextView
+                android:id="@+id/randomTextView"
+                style="@style/mainActivityCategory"
+                android:text="@string/randomCategory" />
+        </LinearLayout>
     </LinearLayout>
 
     <TextView
         android:id="@+id/mainTextview"
         style="@style/activityLabel"
-        android:text="Hello World!"
-        />
+        android:text="@string/mainLabel" />
 </LinearLayout>

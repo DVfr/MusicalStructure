@@ -1,11 +1,18 @@
 <resources>
     <string name="app_name">MusicalStructureApp</string>
-    <string name="artistListString">This activity shows the list of artists, retrieved from the discogs.com API.</string>
-    <string name="albumListString">This activity shows the complete album collection, retrieved from the discogs.com API</string>
-    <string name="artistString">In this activity the user can chose an album from the selected artist.
+    <string name="artistCategory">Artist</string>
+    <string name="albumCategory">Album</string>
+    <string name="randomCategory">Random</string>
+    <string name="mainLabel">The aim of this app is to retrieve music collection from the discogs.com website and make it playable.\n
+        The music collection can be browsed by artist, by album, or randomly.</string>
+    <string name="artistListLabel">This activity shows the list of artists, retrieved from the discogs.com API.\n
+        As an example here only PHIL COLLINS can be selected !</string>
+    <string name="albumListLabel">This activity shows the complete album collection, retrieved from the discogs.com API.\n
+    As an example the only active album is BUT SERIOUSLY !</string>
+    <string name="artistLabel">In this activity the user can chose an album from the selected artist.
         This list comes from the discogs.com API. As an example the only active album is BUT SERIOUSLY !</string>
-    <string name="playString">In this activity all songs from an album are listed and can be played
-        thanks to the media player.\nThe album detail is retrieved from the discog.com api</string>
+    <string name="playLabel">In this activity all songs from an album are listed and can be played
+        thanks to the MediaPlayer.\nSong titles are retrieved from the discog.com API.</string>
     <string name="butSeriously">PHIL COLLINS - &#8230;But Seriously</string>
     <string name="title1">Hang in Long Enough\n4\'44</string>
     <string name="title2">That\'s Just the Way It Is\n5\'20</string>
@@ -19,6 +26,6 @@
     <string name="title10">Saturday Night and Sunday Morning\n1\'26</string>
     <string name="title11">Father to Son\n3\'28</string>
     <string name="title12">Find a Way to My Heart\n6\'08</string>
-    
+
 
 </resources>
