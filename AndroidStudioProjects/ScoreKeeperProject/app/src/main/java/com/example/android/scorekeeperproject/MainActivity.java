@@ -17,62 +17,41 @@ package com.example.android.scorekeeperproject;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 /**
- * This activity keeps track of the basketball score for 2 teams.
+ * This activity keeps track of the rugby score and cards for 2 teams.
  */
 public class MainActivity extends AppCompatActivity {
-
     // Tracks the score for Team A
     int scoreTeamA = 0;
 
     // Tracks the score for Team B
     int scoreTeamB = 0;
 
+    // Tracks the yellow cards for Team A
     int yellowCardTeamA = 0;
+
+    // Tracks the red cards for Team A
     int redCardTeamA = 0;
 
+    // Tracks the yellow cards for Team B
     int yellowCardTeamB = 0;
+
+    // Tracks the red cards for Team B
     int redCardTeamB = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String jamesbond = "hi";
-        String jamesBond = "hello";
-        String s = jamesBond + jamesbond;
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimpSlifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     /**
      * Increase the score for Team A by 1 point.
      */
+
     public void addTwoForTeamA(View v) {
         scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
@@ -119,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Resets the score for both teams back to 0.
+     * Resets the score for both teams
      */
     public void resetScore(View v) {
         scoreTeamA = 0;
@@ -137,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the given score for Team A.
+     * Displays the score for Team A.
      */
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
@@ -145,55 +124,74 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the given score for Team B.
+     * Displays the score for Team B.
      */
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 
-
+    /**
+     * Add 1 yellow card to Team A
+     */
     public void addYellowCardForTeamA(View v) {
-    yellowCardTeamA = yellowCardTeamA + 1;
+        yellowCardTeamA = yellowCardTeamA + 1;
         displayYellowCardForTeamA(yellowCardTeamA);
-}
+    }
 
+    /**
+     * Displays the number of yellow cards for Team A
+     */
     public void displayYellowCardForTeamA(int numberOfCard) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_yellow_card);
         scoreView.setText(String.valueOf(numberOfCard));
     }
 
+    /**
+     * Add 1 red card to Team A
+     */
     public void addRedCardForTeamA(View v) {
         redCardTeamA = redCardTeamA + 1;
         displayRedCardForTeamA(redCardTeamA);
     }
 
+    /**
+     * Displays the number of red cards for Team A
+     */
     public void displayRedCardForTeamA(int numberOfCard) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_red_card);
         scoreView.setText(String.valueOf(numberOfCard));
     }
 
-
-
+    /**
+     * Add 1 yellow card to Team B
+     */
     public void addYellowCardForTeamB(View v) {
         yellowCardTeamB = yellowCardTeamB + 1;
         displayYellowCardForTeamB(yellowCardTeamB);
     }
 
+    /**
+     * Displays the number of yellow cards for Team !b
+     */
     public void displayYellowCardForTeamB(int numberOfCard) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_yellow_card);
         scoreView.setText(String.valueOf(numberOfCard));
     }
 
+    /**
+     * Add 1 red card to Team B
+     */
     public void addRedCardForTeamB(View v) {
         redCardTeamB = redCardTeamB + 1;
         displayRedCardForTeamB(redCardTeamB);
     }
 
+    /**
+     * Displays the number of red cards for Team B
+     */
     public void displayRedCardForTeamB(int numberOfCard) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_red_card);
         scoreView.setText(String.valueOf(numberOfCard));
     }
-
-
 }
